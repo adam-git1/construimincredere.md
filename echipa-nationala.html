@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Echipa Națională – Mișcarea Civică Construim înCREDere.">
+<title>Echipa Națională – Construim înCREDere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="container">
+    <div class="header-inner">
+
+      <a href="index.html" class="site-logo" aria-label="Construim înCREDere – Acasă">
+        <img class="logo-dark" src="img/Asset 1@2x.png" alt="Construim înCREDere">
+        <img class="logo-light" src="img/Asset 3@2x.png" alt="Construim înCREDere">
+      </a>
+
+      <nav class="main-nav" aria-label="Navigare principală">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Acasă</a>
+          </li>
+          <li class="nav-item has-sub">
+            <a href="#" class="nav-link">Despre Noi</a>
+            <ul class="sub-menu">
+              <li><a href="index.html#cine-suntem">Cine suntem</a></li>
+              <li><a href="index.html#ce-facem">Ce facem</a></li>
+              <li><a href="#">Echipe Locale</a></li>
+              <li><a href="echipa-nationala.html">Echipa Națională</a></li>
+              <li><a href="#">Transparență</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#noutati" class="nav-link">Noutăți</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#site-footer" class="nav-link">Contacte</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="lang-sw" role="group" aria-label="Selectare limbă">
+        <button class="lang-btn active" data-lang="ro">RO</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="burger" id="burgerBtn" aria-label="Deschide meniu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Meniu mobil">
+  <button class="mobile-close" id="mobileClose" aria-label="Închide meniu">&times;</button>
+  <a href="index.html">Acasă</a>
+  <a href="index.html#cine-suntem">Cine suntem</a>
+  <a href="index.html#ce-facem">Ce facem</a>
+  <a href="#">Echipe Locale</a>
+  <a href="echipa-nationala.html">Echipa Națională</a>
+  <a href="#">Transparență</a>
+  <a href="index.html#noutati">Noutăți</a>
+  <a href="index.html#site-footer">Contacte</a>
+  <div class="m-lang" role="group" aria-label="Selectare limbă">
+    <button class="active" data-lang="ro">RO</button>
+    <button data-lang="ru">RU</button>
+    <button data-lang="en">EN</button>
+  </div>
+</nav>
+
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <svg class="page-hero-deco" viewBox="0 0 500 500" fill="none" aria-hidden="true">
+    <circle cx="500" cy="500" r="70"  stroke="white" stroke-width="1.5"/>
+    <circle cx="500" cy="500" r="130" stroke="white" stroke-width="1.5"/>
+    <circle cx="500" cy="500" r="190" stroke="white" stroke-width="1.5"/>
+    <circle cx="500" cy="500" r="250" stroke="white" stroke-width="1.5"/>
+    <circle cx="500" cy="500" r="310" stroke="white" stroke-width="1.5"/>
+    <circle cx="500" cy="500" r="370" stroke="white" stroke-width="1.5"/>
+    <circle cx="500" cy="500" r="430" stroke="white" stroke-width="1.5"/>
+  </svg>
+  <div class="container">
+    <div class="page-hero-inner fade-up">
+      <span class="tag">Oamenii din spatele mișcării</span>
+      <h1 class="page-hero-title">Echipa Națională</h1>
+      <p class="page-hero-lead">
+        Profesioniști din domenii diverse, uniți de dorința de a construi o societate
+        mai dreaptă, mai transparentă și mai apropiată de cetățean.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- MEMBRII CONSILIULUI -->
+<section class="team-section" style="background: var(--light);">
+  <div class="container">
+    <div class="team-section-head fade-up">
+      <span class="tag">Structura de conducere</span>
+      <h2 class="team-section-title">Membrii consiliului</h2>
+    </div>
+    <div class="team-grid">
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Olesea Stamate.jpg" alt="Olesea Stamate">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Olesea Stamate</h3>
+          <p class="member-desc">Avocată. Ministră a justiției (2019), deputat în parlament (2021–2025).</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Tanea Crețu.JPG" alt="Tanea Crețu" style="object-position:center center;">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Tanea Crețu</h3>
+          <p class="member-desc">Juristă. Activistă civică.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Alexandru Carcea.jpeg" alt="Alexandru Carcea">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Alexandru Carcea</h3>
+          <p class="member-desc">Expert în domeniul telecom. Pasionat de proiectele care îmbină tehnologia cu nevoile reale ale clienților.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/dorin podlisnic.jpg" alt="Dorin Podlisnic">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Dorin Podlisnic</h3>
+          <p class="member-desc">Avocat. Realizatorul podcastului VERDICT.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Inna Vîrtosu.jpg" alt="Ina Vîrtosu">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Ina Vîrtosu</h3>
+          <p class="member-desc">Doctor în dreptul concurenței. Activistă civică.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Vitalii Ciuchitu.jpg" alt="Vitalii Ciuchitu">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Vitalii Ciuchitu</h3>
+          <p class="member-desc">Avocat.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Liliana Martin.jpg" alt="Liliana Martin">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Liliana Martin</h3>
+          <p class="member-desc">Expertă în domeniul agroalimentar, cu o experiență de peste 12 ani în politici agricole, dezvoltare rurală și modernizare instituțională.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Mihaela Juravlea.png" alt="Mihaela Juravlea">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Mihaela Juravlea</h3>
+          <p class="member-desc">Juristă. Anterior — ofițer de urmărire penală MAI.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Evghenii Carbuni.JPG" alt="Evghenii Cărbuni">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Evghenii Cărbuni</h3>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/nadejda baltaga.jpg" alt="Nadejda Baltaga">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Nadejda Baltaga</h3>
+          <p class="member-desc">Magistru în psihologie și management educațional. Directoare, instituție de învățământ preșcolară.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Aurelia LITVIN.jpg" alt="Aurelia Litvin">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Aurelia Litvin</h3>
+          <p class="member-desc">Doctor Habilitat. Profesor universitar.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Ana Balan.jpg" alt="Ana Bălan">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Ana Bălan</h3>
+          <p class="member-desc">Profesoară.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPERȚI ASOCIAȚI -->
+<section class="team-section" style="background: var(--white);">
+  <div class="container">
+    <div class="team-section-head fade-up">
+      <span class="tag">Consultanți</span>
+      <h2 class="team-section-title">Experți asociați</h2>
+    </div>
+    <div class="team-grid team-grid--3">
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Viorel Gîrbu.jpg" alt="Viorel Gîrbu">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Viorel Gîrbu</h3>
+          <p class="member-desc">Expert economic.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <div class="member-placeholder">MP</div>
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Marin Podubnîi</h3>
+          <p class="member-desc">Expert în domeniul IT și securității digitale.</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="img/EchipaNationala/Iordanca-Rodica_Iordanov.jpg" alt="Iordanca-Rodica Iodranov">
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">Iordanca-Rodica Iodranov</h3>
+          <p class="member-desc">Directoare Eco-contact. Ministră a mediului (2022–2024).</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="site-footer" aria-label="Footer">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <img src="img/Asset 3@2x.png" alt="Construim înCREDere">
+        <p class="footer-desc">
+          Mișcarea Civică „Construim înCREDere" promovează o integrare europeană bazată
+          pe transparență, responsabilitate și implicarea reală a cetățenilor.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="soc-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="soc-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="foot-col-title">Navigare</h4>
+        <nav class="foot-links" aria-label="Navigare footer">
+          <a href="index.html">Acasă</a>
+          <a href="index.html#cine-suntem">Cine suntem</a>
+          <a href="index.html#ce-facem">Ce facem</a>
+          <a href="#">Echipe Locale</a>
+          <a href="echipa-nationala.html">Echipa Națională</a>
+          <a href="#">Transparență</a>
+          <a href="index.html#noutati">Noutăți</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 class="foot-col-title">Contact</h4>
+        <p class="foot-email">
+          <a href="mailto:office@construimincredere.md">office@construimincredere.md</a>
+        </p>
+        <div class="foot-cta" style="margin-top:24px">
+          <h4 class="foot-col-title">Acționează</h4>
+          <a href="#" class="btn btn-red">Donează</a>
+          <a href="#" class="btn btn-outline" style="border-color:rgba(255,255,255,.35)">Implică-te</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>www.construimincredere.md &copy; 2026. Toate drepturile rezervate.</span>
+      <div class="foot-legal">
+        <a href="#">Politica de securitate</a>
+        <a href="#">Termeni și condiții</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
