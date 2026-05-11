@@ -1057,3 +1057,99 @@ ul  { list-style: none; }
   .team-grid,
   .team-grid--3 { grid-template-columns: 1fr; }
 }
+
+/* ================================================================
+   TRANSPARENȚĂ
+   ================================================================ */
+.transparency-section {
+  background: var(--white);
+  padding: 80px 0;
+}
+.transparency-intro {
+  max-width: 930px;
+  font-size: 17px;
+  line-height: 1.82;
+  color: #3a3a4a;
+  margin-bottom: 56px;
+}
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 930px;
+}
+.doc-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--light);
+  border-radius: 14px;
+  padding: 28px 28px;
+  border: 1.5px solid transparent;
+  transition: border-color var(--t), box-shadow var(--t);
+}
+.doc-card:hover {
+  border-color: var(--red);
+  box-shadow: 0 8px 32px rgba(12,8,41,.08);
+}
+.doc-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--red);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doc-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+}
+.doc-info { flex: 1; }
+.doc-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+.doc-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+.doc-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.doc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: var(--t);
+  cursor: pointer;
+  border: none;
+}
+.doc-btn--primary {
+  background: var(--navy);
+  color: var(--white);
+}
+.doc-btn--primary:hover { background: var(--red); }
+.doc-btn--secondary {
+  background: transparent;
+  color: var(--navy);
+  border: 1.5px solid rgba(12,8,41,.2);
+}
+.doc-btn--secondary:hover { border-color: var(--red); color: var(--red); }
+.doc-btn svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+
+@media (max-width: 640px) {
+  .doc-grid { grid-template-columns: 1fr; }
+  .doc-card { padding: 22px; }
+}
