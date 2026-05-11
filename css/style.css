@@ -155,13 +155,13 @@ ul  { list-style: none; }
 /* Dropdown */
 .sub-menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   background: var(--white);
   border-radius: 8px;
   box-shadow: 0 8px 36px rgba(12,8,41,.14);
   min-width: 200px;
-  padding: 8px 0;
+  padding: 16px 0 8px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-6px);
