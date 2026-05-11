@@ -892,7 +892,7 @@ ul  { list-style: none; }
 @media (max-width: 768px) {
   .main-nav { display: none; }
   .lang-sw  { display: none; }
-  .burger   { display: flex; }
+  .burger   { display: flex; margin-left: auto; }
 
   .hero-inner {
     grid-template-columns: 1fr;
