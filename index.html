@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mișcarea Civică Construim înCREDere – Transformăm integrarea europeană într-un proiect național real, susținut de cetățeni.">
+<title>Construim înCREDere – Mișcarea Civică</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<!-- ================================================================
+     HEADER
+     ================================================================ -->
+<header id="site-header">
+  <div class="container">
+    <div class="header-inner">
+
+      <a href="#" class="site-logo" aria-label="Construim înCREDere – Acasă">
+        <!-- dark logo for white header -->
+        <img class="logo-dark"
+             src="img/Asset 1@2x.png"
+             alt="Construim înCREDere">
+        <!-- light logo for dark/transparent header -->
+        <img class="logo-light"
+             src="img/Asset 3@2x.png"
+             alt="Construim înCREDere">
+      </a>
+
+      <nav class="main-nav" aria-label="Navigare principală">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Acasă</a>
+          </li>
+          <li class="nav-item has-sub">
+            <a href="#" class="nav-link">Despre Noi</a>
+            <ul class="sub-menu">
+              <li><a href="#cine-suntem">Cine suntem</a></li>
+              <li><a href="#ce-facem">Ce facem</a></li>
+              <li><a href="#">Echipe Locale</a></li>
+              <li><a href="#">Echipa Națională</a></li>
+              <li><a href="#">Transparență</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#noutati" class="nav-link">Noutăți</a>
+          </li>
+          <li class="nav-item">
+            <a href="#site-footer" class="nav-link">Contacte</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="lang-sw" role="group" aria-label="Selectare limbă">
+        <button class="lang-btn active" data-lang="ro">RO</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="burger" id="burgerBtn" aria-label="Deschide meniu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Meniu mobil">
+  <button class="mobile-close" id="mobileClose" aria-label="Închide meniu">&times;</button>
+  <a href="#">Acasă</a>
+  <a href="#cine-suntem">Cine suntem</a>
+  <a href="#ce-facem">Ce facem</a>
+  <a href="#">Echipe Locale</a>
+  <a href="#">Echipa Națională</a>
+  <a href="#">Transparență</a>
+  <a href="#noutati">Noutăți</a>
+  <a href="#site-footer">Contacte</a>
+  <div class="m-lang" role="group" aria-label="Selectare limbă">
+    <button class="active" data-lang="ro">RO</button>
+    <button data-lang="ru">RU</button>
+    <button data-lang="en">EN</button>
+  </div>
+  <div class="m-cta">
+    <a href="#" class="btn btn-red">Donează</a>
+    <a href="#" class="btn btn-outline">Implică-te</a>
+  </div>
+</nav>
+
+
+<!-- ================================================================
+     HERO
+     ================================================================ -->
+<section id="hero" aria-labelledby="hero-title">
+
+  <!-- Decorative arcs SVG -->
+  <svg class="hero-deco" viewBox="0 0 560 560" fill="none" aria-hidden="true">
+    <circle cx="560" cy="560" r="70"  stroke="white" stroke-width="1.5"/>
+    <circle cx="560" cy="560" r="130" stroke="white" stroke-width="1.5"/>
+    <circle cx="560" cy="560" r="190" stroke="white" stroke-width="1.5"/>
+    <circle cx="560" cy="560" r="250" stroke="white" stroke-width="1.5"/>
+    <circle cx="560" cy="560" r="310" stroke="white" stroke-width="1.5"/>
+    <circle cx="560" cy="560" r="370" stroke="white" stroke-width="1.5"/>
+    <circle cx="560" cy="560" r="430" stroke="white" stroke-width="1.5"/>
+    <circle cx="560" cy="560" r="490" stroke="white" stroke-width="1.5"/>
+  </svg>
+
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text fade-up">
+        <span class="hero-tag">Mișcarea Civică</span>
+        <h1 class="hero-title" id="hero-title">
+          Construim<br>în<em>CRED</em>ere!
+        </h1>
+        <p class="hero-sub">
+          Transformăm integrarea europeană într-un proiect național real,
+          susținut de cetățeni, nu doar un instrument politic.
+        </p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-red">Donează</a>
+          <a href="#" class="btn btn-outline">Implică-te</a>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-up" style="transition-delay:.2s">
+        <img src="img/logo-mb.png"
+             alt="Logo Construim înCREDere – figuri colorate în oval">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     INTRO
+     ================================================================ -->
+<section id="intro" aria-labelledby="intro-title">
+
+  <svg class="intro-deco" viewBox="0 0 440 440" fill="none" aria-hidden="true">
+    <circle cx="0" cy="440" r="60"  stroke="#0C0829" stroke-width="1.5"/>
+    <circle cx="0" cy="440" r="110" stroke="#0C0829" stroke-width="1.5"/>
+    <circle cx="0" cy="440" r="160" stroke="#0C0829" stroke-width="1.5"/>
+    <circle cx="0" cy="440" r="210" stroke="#0C0829" stroke-width="1.5"/>
+    <circle cx="0" cy="440" r="260" stroke="#0C0829" stroke-width="1.5"/>
+    <circle cx="0" cy="440" r="310" stroke="#0C0829" stroke-width="1.5"/>
+    <circle cx="0" cy="440" r="360" stroke="#0C0829" stroke-width="1.5"/>
+  </svg>
+
+  <div class="container">
+    <div class="intro-inner fade-up">
+      <h2 class="intro-title" id="intro-title">
+        Integrarea europeană riscă să
+        <span class="accent">piardă sprijinul cetățenilor</span>
+      </h2>
+      <p class="intro-text">
+        „Construim înCREDere" este o mișcare civică ce promovează o integrare europeană bazată
+        pe transparență, responsabilitate și implicarea reală a cetățenilor. Inițiativa reunește
+        experți și activiști din țară și diaspora pentru a consolida încrederea societății în
+        parcursul european al Republicii Moldova și pentru a transforma acest obiectiv într-un
+        proiect național susținut de oameni, nu doar de clasa politică.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     GALLERY / SLIDER
+     ================================================================ -->
+<section id="gallery" aria-label="Galerie foto">
+  <div class="container">
+    <div class="slider-wrap">
+      <div class="owl-carousel owl-slider">
+        <div class="slide-item" style="background-image:url('img/slider/3M0A8048.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_0023.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_6204.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_6329.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_6687.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_7032.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_7246.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_7759.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_8371.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_8949.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_9188.JPG')"></div>
+        <div class="slide-item" style="background-image:url('img/slider/IMG_9609.JPG')"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     CINE SUNTEM
+     ================================================================ -->
+<section id="cine-suntem" aria-labelledby="cine-title">
+
+  <svg class="cs-deco" viewBox="0 0 480 480" fill="none" aria-hidden="true">
+    <circle cx="480" cy="480" r="70"  stroke="#EF4132" stroke-width="2"/>
+    <circle cx="480" cy="480" r="130" stroke="#EF4132" stroke-width="2"/>
+    <circle cx="480" cy="480" r="190" stroke="#EF4132" stroke-width="2"/>
+    <circle cx="480" cy="480" r="250" stroke="#EF4132" stroke-width="2"/>
+    <circle cx="480" cy="480" r="310" stroke="#EF4132" stroke-width="2"/>
+    <circle cx="480" cy="480" r="370" stroke="#EF4132" stroke-width="2"/>
+    <circle cx="480" cy="480" r="430" stroke="#EF4132" stroke-width="2"/>
+  </svg>
+
+  <div class="container">
+    <div class="despre-inner">
+
+      <!-- Coloana stânga: Cine suntem -->
+      <div class="despre-col fade-up">
+        <span class="tag">Despre noi</span>
+        <h2 class="section-title" id="cine-title">Cine suntem</h2>
+        <p class="cs-subtitle">Curajoși. Onești. Ne iubim țara.</p>
+        <div class="despre-body">
+          <p>Suntem o echipă de profesioniști din diverse domenii, care și-au dedicat activitatea luptând pentru o societate dreaptă, democratică, unde interesul cetățeanului este pe primul loc.
+          </p>
+          <p>Suntem oameni care și iubesc țara, fie că sunt acasă, sau temporar peste hotare, și care sunt determinați să ajute la construcția unui viitor demn pentru copiii și nepoții noștri. Credem în puterea implicării și în responsabilitatea fiecăruia dintre noi de a contribui la binele comun.
+          </p>
+        </div>
+      </div>
+
+      <!-- Coloana dreapta: Ce facem -->
+      <div class="despre-col fade-up" style="transition-delay:.18s">
+        <span id="ce-facem" style="display:block;height:0;visibility:hidden"></span>
+        <span class="tag">Misiunea noastră</span>
+        <h2 class="section-title" id="cf-title">Ce facem</h2>
+        <div class="despre-body">
+          <p>În ultimele decenii am pierdut nu doar oameni, investiții, oportunități și locuri de muncă, am pierdut încrederea că putem scăpa de sărăcie și corupție. Am pierdut încrederea în instituțiile statului, dar și în mass-media și societatea civilă. Prăpastia între cetățeni și cei care iau deciziile în țara noastră se adâncește, la fel și divizarea între oamenii cu opinii și viziuni diferite.</p>
+            <p>Credem că nu mai este timp de pierdut. Dacă ne dorim o țară prosperă, democratică și unită, trebuie să reconstruim încrederea. Încrederea între oameni, cu respect pentru opiniile diferite. Încrederea între oameni și instituții, prin monitorizarea atentă a deciziilor importante dar și comunicare permanentă și directă cu cetățenii, la temele cele mai importante pentru societate. Rămânem tot mai puțini. Doar uniți și cu încredere, avem șansa să reușim. Ca țară. Ca neam. Ca popor.
+            </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================================================================
+     VIZIUNEA NOASTRĂ
+     ================================================================ -->
+<section id="viziunea" aria-labelledby="viz-title">
+
+  <svg class="viz-deco" viewBox="0 0 500 500" fill="none" aria-hidden="true">
+    <circle cx="0" cy="0" r="70"  stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="130" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="190" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="250" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="310" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="370" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="430" stroke="white" stroke-width="1.5"/>
+  </svg>
+
+  <div class="container">
+    <div class="viz-inner">
+
+      <div class="viz-head fade-up">
+        <span class="tag tag-light">Direcția noastră</span>
+        <h2 class="section-title" id="viz-title">Viziunea noastră</h2>
+        <p class="viz-lead">
+          O societate în care încrederea nu este un slogan, ci o realitate: cetățeni implicați
+          și respectați, instituții transparente și responsabile, un parcurs european bazat
+          pe rezultate și nu doar pe declarații.
+        </p>
+        <p class="viz-lead" style="margin-top:0">
+          Pentru a atinge aceste obiective, ne angajăm să:
+        </p>
+      </div>
+
+      <div class="viz-list stagger-children fade-up" style="transition-delay:.18s">
+        <div class="viz-item">
+          <span class="viz-num">1</span>
+          <p>Organizăm consultări publice reale și accesibile pentru cetățeni</p>
+        </div>
+        <div class="viz-item">
+          <span class="viz-num">2</span>
+          <p>Facilităm dialogul constant între societate, mediul de afaceri și autorități</p>
+        </div>
+        <div class="viz-item">
+          <span class="viz-num">3</span>
+          <p>Monitorizăm deciziile publice și informăm corect cetățenii</p>
+        </div>
+        <div class="viz-item">
+          <span class="viz-num">4</span>
+          <p>Elaborăm și promovăm recomandări pentru creșterea transparenței și responsabilității</p>
+        </div>
+        <div class="viz-item">
+          <span class="viz-num">5</span>
+          <p>Susținem inițiative civice la nivel local, regional și național</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     VALORILE NOASTRE
+     ================================================================ -->
+<section id="valori" aria-labelledby="val-title">
+  <div class="container">
+    <div class="valori-head fade-up">
+      <span class="tag">Ce ne definește</span>
+      <h2 class="section-title" id="val-title">Valorile noastre</h2>
+    </div>
+    <div class="valori-grid stagger-children">
+
+      <div class="val-card">
+        <div class="val-icon" aria-hidden="true">🤝</div>
+        <h3 class="val-name">Încredere și responsabilitate</h3>
+        <p class="val-desc">Fiecare decizie trebuie explicată și asumată</p>
+      </div>
+
+      <div class="val-card">
+        <div class="val-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0C0829" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/></svg>
+        </div>
+        <h3 class="val-name">Transparență</h3>
+        <p class="val-desc">Nu ca opțiune, ci ca obligație</p>
+      </div>
+
+      <div class="val-card">
+        <div class="val-icon" aria-hidden="true">✊</div>
+        <h3 class="val-name">Participare</h3>
+        <p class="val-desc">Cetățenii trebuie să fie parte reală a deciziilor</p>
+      </div>
+
+      <div class="val-card">
+        <div class="val-icon" aria-hidden="true">💬</div>
+        <h3 class="val-name">Dialog</h3>
+        <p class="val-desc">Bazat pe respect și argumente, nu pe formalități</p>
+      </div>
+
+      <div class="val-card">
+        <div class="val-icon" aria-hidden="true">🌍</div>
+        <h3 class="val-name">Incluziune</h3>
+        <p class="val-desc">Fiecare voce contează</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     NOUTĂȚI
+     ================================================================ -->
+<section id="noutati" aria-labelledby="news-title">
+  <div class="container">
+
+    <div class="noutati-head">
+      <div class="fade-up">
+        <span class="tag">Actualități</span>
+        <h2 class="section-title" id="news-title">Noutăți</h2>
+      </div>
+      <a href="#" class="all-link">Toate știrile &rarr;</a>
+    </div>
+
+    <div class="news-grid stagger-children">
+
+      <article class="news-card">
+        <div class="news-thumb">
+          <div class="news-thumb-bg" style="background:linear-gradient(135deg,#0C0829,#1c1260)">
+            <img src="img/Asset 8@2x.png"
+                 alt="" style="height:75%;width:auto;opacity:.35;margin:auto">
+          </div>
+        </div>
+        <div class="news-body">
+          <p class="news-date">15 Aprilie 2026</p>
+          <h3 class="news-title">Consultare publică privind transparența instituțiilor europene</h3>
+          <p class="news-excerpt">Am organizat prima consultare publică națională cu participarea
+             a peste 200 de cetățeni din 12 raioane ale Republicii Moldova.</p>
+          <a href="#" class="news-more">Citește mai mult</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-thumb">
+          <div class="news-thumb-bg" style="background:linear-gradient(135deg,#EF4132,#c22d1e)">
+            <img src="img/Asset 8@2x.png"
+                 alt="" style="height:75%;width:auto;opacity:.3;margin:auto;filter:brightness(10)">
+          </div>
+        </div>
+        <div class="news-body">
+          <p class="news-date">2 Martie 2026</p>
+          <h3 class="news-title">Dialog deschis cu autoritățile locale din 5 regiuni</h3>
+          <p class="news-excerpt">Echipele locale ale mișcării au facilitat întâlniri directe
+             între cetățeni și primari, axate pe teme prioritare pentru comunitate.</p>
+          <a href="#" class="news-more">Citește mai mult</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-thumb">
+          <div class="news-thumb-bg" style="background:linear-gradient(135deg,#F9DFC6,#e8c09e)">
+            <img src="img/Asset 4@2x.png"
+                 alt="" style="height:82%;width:auto;opacity:.45;margin:auto">
+          </div>
+        </div>
+        <div class="news-body">
+          <p class="news-date">18 Februarie 2026</p>
+          <h3 class="news-title">Raport de monitorizare a angajamentelor europene</h3>
+          <p class="news-excerpt">Am publicat primul raport de monitorizare a angajamentelor
+             asumate de Republica Moldova în cadrul procesului de integrare europeană.</p>
+          <a href="#" class="news-more">Citește mai mult</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     CTA
+     ================================================================ -->
+<section id="cta" aria-labelledby="cta-title">
+
+  <svg class="cta-deco" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+    <circle cx="520" cy="0" r="80"  stroke="white" stroke-width="2"/>
+    <circle cx="520" cy="0" r="150" stroke="white" stroke-width="2"/>
+    <circle cx="520" cy="0" r="220" stroke="white" stroke-width="2"/>
+    <circle cx="520" cy="0" r="290" stroke="white" stroke-width="2"/>
+    <circle cx="520" cy="0" r="360" stroke="white" stroke-width="2"/>
+    <circle cx="520" cy="0" r="430" stroke="white" stroke-width="2"/>
+    <circle cx="520" cy="0" r="500" stroke="white" stroke-width="2"/>
+  </svg>
+
+  <div class="container">
+    <div class="cta-inner fade-up">
+      <h2 class="cta-title" id="cta-title">Vocea ta contează</h2>
+      <p class="cta-text">
+        Schimbarea începe atunci când cetățenii se implică. Susține o integrare europeană
+        transparentă și responsabilă prin participare, voluntariat sau donație.
+      </p>
+      <div class="cta-btns">
+        <a href="#" class="btn btn-white">Donează</a>
+        <a href="#" class="btn btn-ghost-white">Implică-te</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer id="site-footer" aria-label="Footer">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <img src="img/Asset 3@2x.png"
+             alt="Construim înCREDere">
+        <p class="footer-desc">
+          Mișcarea Civică „Construim înCREDere" promovează o integrare europeană bazată
+          pe transparență, responsabilitate și implicarea reală a cetățenilor.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="soc-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="soc-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="foot-col-title">Navigare</h4>
+        <nav class="foot-links" aria-label="Navigare footer">
+          <a href="#">Acasă</a>
+          <a href="#cine-suntem">Cine suntem</a>
+          <a href="#ce-facem">Ce facem</a>
+          <a href="#">Echipe Locale</a>
+          <a href="#">Echipa Națională</a>
+          <a href="#">Transparență</a>
+          <a href="#noutati">Noutăți</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4 class="foot-col-title">Contact</h4>
+        <p class="foot-email">
+          <a href="mailto:office@construimincredere.md">office@construimincredere.md</a>
+        </p>
+        <div class="foot-cta" style="margin-top:24px">
+          <h4 class="foot-col-title">Acționează</h4>
+          <a href="#" class="btn btn-red">Donează</a>
+          <a href="#" class="btn btn-outline" style="border-color:rgba(255,255,255,.35)">Implică-te</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>www.construimincredere.md &copy; 2026. Toate drepturile rezervate.</span>
+      <div class="foot-legal">
+        <a href="#">Politica de securitate</a>
+        <a href="#">Termeni și condiții</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
